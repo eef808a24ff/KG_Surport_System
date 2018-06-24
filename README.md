@@ -16,17 +16,17 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
 PREFIX dct: <http://purl.org/dc/terms/><br>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/><br>
 SELECT DISTINCT ?dbp ?type ?title ?d_abstract ?define<br>
-WHERE {
-?dbp rdf:type ?type;
-foaf:name ?name;
-dbo:abstract ?d_abstract;
-rdfs:label ?title.
-FILTER regex(?title ,"Titanic")
-FILTER (?type=dbo:Film || ?type=dbo:MusicalWork||?type=dbo:Agent)
-OPTIONAL{FILTER(lang(?name)='zh')}
-OPTIONAL{?dbp <http://purl.org/linguistics/gold/hypernym> ?define}.
-FILTER (lang(?d_abstract) = 'zh'&&lang(?title)='zh').
-} LIMIT 30
+WHERE {<br>
+?dbp rdf:type ?type;<br>
+foaf:name ?name;<br>
+dbo:abstract ?d_abstract;<br>
+rdfs:label ?title.<br>
+FILTER regex(?title ,"Titanic")<br>
+FILTER (?type=dbo:Film || ?type=dbo:MusicalWork||?type=dbo:Agent)<br>
+OPTIONAL{FILTER(lang(?name)='zh')}<br>
+OPTIONAL{?dbp <http://purl.org/linguistics/gold/hypernym> ?define}.<br>
+FILTER (lang(?d_abstract) = 'zh'&&lang(?title)='zh').<br>
+} LIMIT 30<br>
 
 
 ## 以下为推荐语句
