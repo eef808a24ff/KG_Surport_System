@@ -9,7 +9,7 @@ This is a knowledge graph based publications search and recommendation system
 
 ## 以下为查询语句
 
-词条语句查询了label为 Titanic 的实体
+词条语句查询了label为 Titanic 的实体<br>
 PREFIX dbo: <http://dbpedia.org/ontology/> <br>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
