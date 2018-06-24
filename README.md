@@ -10,12 +10,12 @@ This is a knowledge graph based publications search and recommendation system
 ## 以下为查询语句
 
 词条语句查询了label为 Titanic 的实体
-PREFIX dbo: <http://dbpedia.org/ontology/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-SELECT DISTINCT ?dbp ?type ?title ?d_abstract ?define
+PREFIX dbo: <http://dbpedia.org/ontology/> <br>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
+PREFIX dct: <http://purl.org/dc/terms/><br>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/><br>
+SELECT DISTINCT ?dbp ?type ?title ?d_abstract ?define<br>
 WHERE {
 ?dbp rdf:type ?type;
 foaf:name ?name;
