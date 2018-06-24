@@ -1,12 +1,8 @@
 package com.fan.keproject.kg_surport_system;
 
-import android.content.Context;
-import android.provider.CalendarContract;
 import android.util.Log;
 
-import com.hp.hpl.jena.graph.query.QueryHandler;
 import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.query.QueryException;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
@@ -23,7 +19,7 @@ public class FindByName {
 //        flag=false;
         Log.e("query", queryString);
         Query query = QueryFactory.create(queryString);
-        exec= QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", query);
+        exec = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", query);
         ResultSet resultSet = exec.execSelect();
 //        closeExec();
         return resultSet;
@@ -42,21 +38,23 @@ public class FindByName {
         new Thread() {
             @Override
             public void run() {
-                Log.e("Thread4","new");
+                Log.e("Thread4", "new");
                 resultSet = findMovie(queryString);
                 finish.finishRequest();
             }
         }.start();
-        Log.e("Thread3","dead");
+        Log.e("Thread3", "dead");
     }
 
     public static onFinishRequestListener finish;
 
-    interface onFinishRequestListener{
+    interface onFinishRequestListener {
         void finishRequest();
     }
 
-    public static void setOnFinishRequestListener(onFinishRequestListener finishIt){
-        finish=finishIt;
-    };
+    public static void setOnFinishRequestListener(onFinishRequestListener finishIt) {
+        finish = finishIt;
+    }
+
+    ;
 }
