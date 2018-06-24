@@ -15,7 +15,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
 PREFIX dct: <http://purl.org/dc/terms/><br>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/><br>
-SELECT DISTINCT ?dbp ?type ?title ?d_abstract ?define<br>
+SELECT DISTINCT ?dbp ?type ?title ?d_abstract <br>
 WHERE {<br>
 ?dbp rdf:type ?type;<br>
 foaf:name ?name;<br>
