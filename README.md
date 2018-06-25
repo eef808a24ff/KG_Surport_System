@@ -9,7 +9,9 @@ This is a knowledge graph based publications search and recommendation system
 ## 如果您有任何问题，请邮箱联系我：fansluck@qq.com
 
 ## 效果图
-
+![fact1](https://github.com/eef808a24ff/KG_Surport_System/blob/master/01.jpeg)
+![fact2](https://github.com/eef808a24ff/KG_Surport_System/blob/master/02.jpeg)
+![fact3](https://github.com/eef808a24ff/KG_Surport_System/blob/master/03.jpeg)
 ## 以下为查询语句
 
 词条语句查询了label为 Titanic 的实体<br>
