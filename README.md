@@ -22,13 +22,12 @@ WHERE {<br>
 foaf:name ?name;<br>
 dbo:abstract ?d_abstract;<br>
 rdfs:label ?title.<br>
-FILTER regex(?title ,"Titanic")<br>
+FILTER (regex(?title ,"Titanic")||regex(?name ,"Titanic"))<br>
 FILTER (?type=dbo:Film || ?type=dbo:MusicalWork||?type=dbo:Agent)<br>
 OPTIONAL{FILTER(lang(?name)='zh')}<br>
 OPTIONAL{?dbp <http://purl.org/linguistics/gold/hypernym> ?define}.<br>
 FILTER (lang(?d_abstract) = 'zh'&&lang(?title)='zh').<br>
 } LIMIT 30<br>
-
 
 ## 以下为推荐语句
 
