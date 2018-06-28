@@ -4,7 +4,7 @@ This is a knowledge graph based publications search and recommendation system
 
 ## 6-10：考虑基于安卓开发此程序
 
-### 6-25: 基本的查询和推荐功能已经实现；我在这里开放部分sparql语句。此代码仓库已经包括了构建基于DBpedia的安卓客户端的必要的组件，但是我将继续开发这款软件，同时目前不准备开源，还请老师谅解。（但是需要实现的功能代码我会发布在仓库中）
+### 6-25: 基本的查询和推荐功能已经实现；我在这里开放部分sparql语句。此代码仓库已经包括了构建基于DBpedia的安卓客户端的核心类，但是我将继续开发这款软件，同时目前不准备开源，还请老师谅解。（但是需要实现的功能代码我会发布在仓库中）
 # 具体的软件目前可以实现的功能可以查看连接中的视频（链接：https://pan.baidu.com/s/1IWYyV7Yno7jPVrS6xiSQQg 密码：ox5d）
 ## 如果您有任何问题，请邮箱联系我：fansluck@qq.com
 
